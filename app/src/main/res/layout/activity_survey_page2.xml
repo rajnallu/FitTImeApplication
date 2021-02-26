@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/surveyPage2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SurveyPage2">
+
+    <Button
+        android:id="@+id/SURVEYPAGE2NEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="NEXT"
+        android:textSize="18sp"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQ5AnswerBox" />
+
+    <TextView
+        android:id="@+id/textViewQuestion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Do you have any health problems?"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewQ3Answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewQ3Answer"
+        android:layout_width="360dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="8dp"
+        android:background="#E8E3E3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion3" />
+
+    <TextView
+        android:id="@+id/textViewQ3heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald_bold"
+        android:text="  Select Health Problems"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ3Answer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ3Answer"
+        app:layout_constraintTop_toTopOf="@+id/textViewQ3Answer" />
+
+    <CheckBox
+        android:id="@+id/checkBoxQ3Option1"
+        android:layout_width="145dp"
+        android:layout_height="31dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="No Health Problems"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ3Answer"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ3Answer"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQ3heading" />
+
+    <CheckBox
+        android:id="@+id/checkBoxQ3Option2"
+        android:layout_width="151dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Heart Or Lung Problems"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ3Answer"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ3Answer"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxQ3Option1" />
+
+    <CheckBox
+        android:id="@+id/checkBoxQ3Option3"
+        android:layout_width="157dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Mental Health Problems"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ3Answer"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ3Answer"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxQ3Option2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxQ3Option4"
+        android:layout_width="82dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Obesity"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ3Answer"
+        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ3Answer"
+        app:layout_constraintTop_toTopOf="@+id/textViewQ3Answer" />
+
+    <CheckBox
+        android:id="@+id/checkBoxQ3Option5"
+        android:layout_width="194dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Joint or Bone Problems"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ3Answer"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ3Answer"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxQ3Option4" />
+
+    <CheckBox
+        android:id="@+id/checkBoxQ3Option6"
+        android:layout_width="191dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Other - Please Explain"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ3Answer"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ3Answer"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxQ3Option5" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLineOtherHealthProblems"
+        android:layout_width="301dp"
+        android:layout_height="34dp"
+        android:ems="10"
+        android:fontFamily="@font/oswald_light"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ3Answer"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ3Answer"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxQ3Option6" />
+
+    <TextView
+        android:id="@+id/textViewQ4AnswerBox"
+        android:layout_width="370dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="8dp"
+        android:background="#E8E3E3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQ4" />
+
+    <TextView
+        android:id="@+id/textViewQ4"
+        android:layout_width="356dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="What do you want to accomplish with this app?"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQ3Answer" />
+
+    <TextView
+        android:id="@+id/textViewQ4Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="   Select Accomplishments"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ4AnswerBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ4AnswerBox"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQ4" />
+
+    <CheckBox
+        android:id="@+id/checkBoxQ4Option1"
+        android:layout_width="241dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Lose Weight"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ4AnswerBox"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ4AnswerBox"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQ4Heading" />
+
+    <CheckBox
+        android:id="@+id/checkBoxQ4Option2"
+        android:layout_width="221dp"
+        android:layout_height="28dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Exercise More/ Regularly"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ4AnswerBox"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ4AnswerBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxQ4Option1" />
+
+    <CheckBox
+        android:id="@+id/checkBoxQ4Option3"
+        android:layout_width="213dp"
+        android:layout_height="28dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Feel Better About Yourself"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ4AnswerBox"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ4AnswerBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxQ4Option2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxQ4Option4"
+        android:layout_width="241dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Other - Please Explain"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ4AnswerBox"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxQ4Option3" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="334dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ4AnswerBox"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ4AnswerBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxQ4Option4" />
+
+    <TextView
+        android:id="@+id/textViewQ5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="What time range are you usually available everyday?"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQ4AnswerBox" />
+
+    <TextView
+        android:id="@+id/textViewQ5AnswerBox"
+        android:layout_width="369dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="4dp"
+        android:background="#E8E3E3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQ5" />
+
+    <TextView
+        android:id="@+id/textViewQ5Heading"
+        android:layout_width="238dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="   Select Time Range"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ5AnswerBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ5AnswerBox"
+        app:layout_constraintTop_toTopOf="@+id/textViewQ5AnswerBox" />
+
+    <EditText
+        android:id="@+id/editTextTimeRange"
+        android:layout_width="147dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:fontFamily="@font/oswald_light"
+        android:inputType="time"
+        android:text="Start Time"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ5AnswerBox"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="@+id/textViewQ5AnswerBox"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQ5Heading" />
+
+    <EditText
+        android:id="@+id/editTextTimeRange2"
+        android:layout_width="141dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:fontFamily="@font/oswald_light"
+        android:inputType="time"
+        android:text="End Time"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQ5AnswerBox"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/editTextTimeRange"
+        app:layout_constraintTop_toTopOf="@+id/textViewQ5AnswerBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

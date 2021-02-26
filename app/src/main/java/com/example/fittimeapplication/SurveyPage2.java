@@ -7,27 +7,25 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LoginActivity extends AppCompatActivity {
+public class SurveyPage2 extends AppCompatActivity {
 
-    private Button buttonRegister;
+    private Button SURVEYPAGE2NEXT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_survey_page2);
 
         initViews();
 
-        buttonRegister.setOnClickListener(new View.OnClickListener() {
+        SURVEYPAGE2NEXT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this,surveryPage1.class);
+                Intent intent = new Intent(SurveyPage2.this,GoalsPage.class );
                 startActivity(intent);
             }
         });
     }
 
-    private void initViews() {
-        buttonRegister = findViewById(R.id.buttonRegister);
-    }
+    private void initViews() { SURVEYPAGE2NEXT = findViewById(R.id.SURVEYPAGE2NEXT);}
 }

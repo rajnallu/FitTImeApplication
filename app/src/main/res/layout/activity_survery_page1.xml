@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".surveryPage1">
+
+    <TextView
+        android:id="@+id/textViewQuestion1"
+        android:layout_width="352dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="center_horizontal"
+        android:shadowColor="#FFFFFF"
+        android:text="What sort of excercises do you most enjoy?"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnswer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.934" />
+
+    <TextView
+        android:id="@+id/textViewAnswer1"
+        android:layout_width="355dp"
+        android:layout_height="216dp"
+        android:layout_marginBottom="8dp"
+        android:background="#E8E3E3"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Select Excercises"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewQuestion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOption1"
+        android:layout_width="149dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Aerobic Exercise -"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxOption2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewOption1"
+        app:layout_constraintStart_toStartOf="@+id/textViewAnswer1"
+        app:layout_constraintTop_toTopOf="@+id/textViewAnswer1" />
+
+    <TextView
+        android:id="@+id/textViewOption1"
+        android:layout_width="208dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Increases Heart Rate, Works Muscles, Makes you work Harder and Faster- Ex. Running, Cycling "
+        android:textColor="#0B0A0A"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOption2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAnswer1"
+        app:layout_constraintTop_toTopOf="@+id/textViewAnswer1" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOption2"
+        android:layout_width="135dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Flexibility -"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxOption3"
+        app:layout_constraintEnd_toStartOf="@+id/textViewOption2"
+        app:layout_constraintStart_toStartOf="@+id/textViewAnswer1" />
+
+    <TextView
+        android:id="@+id/textViewOption2"
+        android:layout_width="174dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Ex. Stretching, Yoga"
+        android:textColor="#121111"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOption3"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAnswer1" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOption3"
+        android:layout_width="149dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Strength/Resistance -"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAnswer1"
+        app:layout_constraintEnd_toStartOf="@+id/textViewOption3"
+        app:layout_constraintStart_toEndOf="@+id/textViewOption3"
+        app:layout_constraintStart_toStartOf="@+id/textViewAnswer1" />
+
+    <TextView
+        android:id="@+id/textViewOption3"
+        android:layout_width="160dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Ex. Barbells, Dumbbells, Weight Plates"
+        android:textColor="#0C0C0C"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAnswer1"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAnswer1" />
+
+    <TextView
+        android:id="@+id/textViewQuestion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Do you have any physical disabilities?"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnswer2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAnswer2"
+        android:layout_width="366dp"
+        android:layout_height="263dp"
+        android:layout_marginBottom="68dp"
+        android:background="#E8E3E3"
+        android:fontFamily="@font/oswald_bold"
+        android:text="  Select Disabilities"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxQ2Option1"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="221dp"
+        android:layout_marginRight="221dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="No Disabilities"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxQ2Option2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAnswer2"
+        app:layout_constraintStart_toStartOf="@+id/textViewAnswer2"
+        app:layout_constraintTop_toTopOf="@+id/textViewAnswer2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxQ2Option2"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginRight="225dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Leg Disabilities"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxQ2Option3"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAnswer2"
+        app:layout_constraintStart_toStartOf="@+id/textViewAnswer2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxQ2Option3"
+        android:layout_width="257dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Arm, Hand or Shoulder Disabilities"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxOption4"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAnswer2"
+        app:layout_constraintStart_toStartOf="@+id/textViewAnswer2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOption4"
+        android:layout_width="169dp"
+        android:layout_height="43dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Other- Please Explain"
+        app:layout_constraintBottom_toTopOf="@+id/editTextQ2Option4"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAnswer2"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="@+id/textViewAnswer2" />
+
+    <EditText
+        android:id="@+id/editTextQ2Option4"
+        android:layout_width="342dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:fontFamily="@font/oswald_light"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAnswer2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAnswer2"
+        app:layout_constraintStart_toStartOf="@+id/textViewAnswer2" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="NEXT"
+        android:textSize="18sp"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAnswer2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

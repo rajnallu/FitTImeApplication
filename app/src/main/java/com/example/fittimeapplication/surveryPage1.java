@@ -7,27 +7,27 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LoginActivity extends AppCompatActivity {
+public class surveryPage1 extends AppCompatActivity {
 
-    private Button buttonRegister;
+    private Button buttonNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_survery_page1);
 
         initViews();
 
-        buttonRegister.setOnClickListener(new View.OnClickListener() {
+        buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this,surveryPage1.class);
+                Intent intent = new Intent(surveryPage1.this,SurveyPage2.class );
                 startActivity(intent);
             }
         });
+
     }
 
-    private void initViews() {
-        buttonRegister = findViewById(R.id.buttonRegister);
-    }
+    private void initViews() { buttonNext = findViewById(R.id.buttonNext);}
+
 }
