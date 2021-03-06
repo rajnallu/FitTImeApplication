@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlexibilityExercise">
+
+    <Button
+        android:id="@+id/standingHamstring2"
+        android:layout_width="320dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="left"
+        android:text="Standing Hamstring Stretch"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#709AF82D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LungeWithSpinalTwist" />
+
+    <Button
+        android:id="@+id/LungeWithSpinalTwist"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="left"
+        android:text="Lunge with Spinal Twist"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#599AF82D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/examplesAerobic" />
+
+    <TextView
+        android:id="@+id/examplesAerobic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Examples:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FlexibilityHeading" />
+
+    <TextView
+        android:id="@+id/FlexibilityHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Flexibilty"
+        android:textColor="#9AF82D"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExerciseHeading2" />
+
+    <TextView
+        android:id="@+id/textViewExerciseHeading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Exercise"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGoalsOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/FrogStretch"
+        android:layout_width="232dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="left"
+        android:text="Frog Stretch"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#8C9AF82D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/standingHamstring2" />
+
+    <Button
+        android:id="@+id/btnTricepStretch"
+        android:layout_width="277dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="left"
+        android:text="TRICEPS STRETCH"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#A39AF82D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FrogStretch" />
+
+    <Button
+        android:id="@+id/btnFig4Stretch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="left"
+        android:text="FIGURE 4 STRETCH"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#BF9AF82D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTricepStretch" />
+
+    <Button
+        android:id="@+id/s9090Stretch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="left"
+        android:text="90/90 Stretch"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#D69AF82D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFig4Stretch" />
+
+    <Button
+        android:id="@+id/ButterflyStretch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="left"
+        android:text="Butterfly Stretch"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#9AF82D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s9090Stretch" />
+
+    <Button
+        android:id="@+id/BacktoExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Back to Exercise Page"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:backgroundTint="#9C9C9C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButterflyStretch" />
+</androidx.constraintlayout.widget.ConstraintLayout>

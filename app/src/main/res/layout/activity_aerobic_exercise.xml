@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AerobicExercise">
+
+    <Button
+        android:id="@+id/backtoExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Back to Exercise Page"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:backgroundTint="#9C9C9C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AerobicExerciseMore" />
+
+    <TextView
+        android:id="@+id/textViewExerciseHeading3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Exercise"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGoalsOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAerobicExerciseHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text=" Aerobic "
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGoalsOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExerciseHeading3" />
+
+    <Button
+        android:id="@+id/JumpRope"
+        android:layout_width="146dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Jump Rope"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="#6FE91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RunningJogging" />
+
+    <Button
+        android:id="@+id/JumpingJacks"
+        android:layout_width="176dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Jumping Jacks"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="#8BE91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JumpRope" />
+
+    <Button
+        android:id="@+id/HighKnees"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="High Knees"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="#A4E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JumpingJacks" />
+
+    <Button
+        android:id="@+id/Burpees"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Burpees"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="#BEE91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HighKnees" />
+
+    <Button
+        android:id="@+id/MoutainClimbers"
+        android:layout_width="218dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Mountain Climbers"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="#D7E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Burpees" />
+
+    <Button
+        android:id="@+id/Skip"
+        android:layout_width="76dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Skip"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Burpees" />
+
+    <Button
+        android:id="@+id/RunningJogging"
+        android:layout_width="209dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Running/Jogging"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="#4DE91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ExamplesAerobic" />
+
+    <TextView
+        android:id="@+id/ExamplesAerobic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Examples:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAerobicExerciseHeading" />
+
+    <TextView
+        android:id="@+id/AerobicExerciseMore"
+        android:layout_width="358dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="*Many sports such as Soccor and Basketball are also forms of aerobic exercise"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Skip" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

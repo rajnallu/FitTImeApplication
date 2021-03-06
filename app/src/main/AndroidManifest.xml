@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitTimeApplication">
-        <activity android:name=".ScreenTimeLimits"></activity>
+        <activity android:name=".FlexibilityExercise" />
+        <activity android:name=".AerobicExercise" />
+        <activity android:name=".ExcercisePage" />
+        <activity android:name=".ScreenTimeLimits" />
         <activity android:name=".GoalsPage" />
         <activity android:name=".SurveyPage2" />
         <activity android:name=".surveryPage1" />

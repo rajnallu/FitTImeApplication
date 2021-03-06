@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExcercisePage">
+
+    <TextView
+        android:id="@+id/textViewExerciseHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Exercise"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGoalsOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AerobicExcercise"
+        android:layout_width="328dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Aerobic"
+        android:textSize="24sp"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExerciseHeading" />
+
+    <Button
+        android:id="@+id/StrengthResistenceExercise"
+        android:layout_width="322dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Strength/Resistance"
+        android:textSize="24sp"
+        app:backgroundTint="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FlexibilityExercise" />
+
+    <Button
+        android:id="@+id/FlexibilityExercise"
+        android:layout_width="324dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Flexibility"
+        android:textSize="24sp"
+        app:backgroundTint="#9AF82D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AerobicExcercise" />
+</androidx.constraintlayout.widget.ConstraintLayout>
