@@ -7,24 +7,23 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class FlexibilityExercise extends AppCompatActivity {
-    private Button BackToExercise;
+public class StrengthResistanceExercise extends AppCompatActivity {
+    private Button backtoExercise2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flexibility_exercise);
+        setContentView(R.layout.activity_strength_resistance_exercise);
         initViews();
 
-        BackToExercise.setOnClickListener(new View.OnClickListener() {
+        backtoExercise2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FlexibilityExercise.this,ExcercisePage.class);
+                Intent intent = new Intent(StrengthResistanceExercise.this,ExcercisePage.class);
                 startActivity(intent);
             }
         });
-
     }
     private void initViews() {
-        BackToExercise = findViewById(R.id.BacktoExercise);
+        backtoExercise2 = findViewById(R.id.backtoExercise2);
     }
 }

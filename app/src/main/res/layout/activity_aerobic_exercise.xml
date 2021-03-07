@@ -6,20 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".AerobicExercise">
 
+    <TextView
+        android:id="@+id/aerobicExerciseMore"
+        android:layout_width="166dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="328dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="*Many sports such as Soccor and Basketball are also forms of aerobic exercise"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toEndOf="@+id/JumpingJacks"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
-        android:id="@+id/backtoExercise"
+        android:id="@+id/start3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/oswald_bold"
-        android:text="Back to Exercise Page"
+        android:text="Start"
         android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:backgroundTint="#9C9C9C"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintHorizontal_bias="0.763"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AerobicExerciseMore" />
+        app:layout_constraintTop_toBottomOf="@+id/Skip" />
+
+    <Button
+        android:id="@+id/backtoExercise3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Back"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:backgroundTint="#9C9C9C"
+        app:layout_constraintEnd_toStartOf="@+id/start3"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Skip" />
 
     <TextView
         android:id="@+id/textViewExerciseHeading3"
@@ -61,9 +90,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:backgroundTint="#6FE91E63"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.215"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/JumpingJacks"
         app:layout_constraintTop_toBottomOf="@+id/RunningJogging" />
 
     <Button
@@ -76,9 +103,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:backgroundTint="#8BE91E63"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.236"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/HighKnees"
         app:layout_constraintTop_toBottomOf="@+id/JumpRope" />
 
     <Button
@@ -91,53 +116,47 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:backgroundTint="#A4E91E63"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.215"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Burpees"
         app:layout_constraintTop_toBottomOf="@+id/JumpingJacks" />
 
     <Button
         android:id="@+id/Burpees"
         android:layout_width="110dp"
         android:layout_height="50dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/oswald_bold"
         android:text="Burpees"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:backgroundTint="#BEE91E63"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.201"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/MoutainClimbers"
         app:layout_constraintTop_toBottomOf="@+id/HighKnees" />
 
     <Button
         android:id="@+id/MoutainClimbers"
         android:layout_width="218dp"
         android:layout_height="51dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/oswald_bold"
         android:text="Mountain Climbers"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:backgroundTint="#D7E91E63"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.272"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Skip"
         app:layout_constraintTop_toBottomOf="@+id/Burpees" />
 
     <Button
         android:id="@+id/Skip"
         android:layout_width="76dp"
         android:layout_height="51dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="56dp"
         android:fontFamily="@font/oswald_bold"
         android:text="Skip"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:backgroundTint="#E91E63"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Burpees" />
 
@@ -151,9 +170,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:backgroundTint="#4DE91E63"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.262"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/JumpRope"
         app:layout_constraintTop_toBottomOf="@+id/ExamplesAerobic" />
 
     <TextView
@@ -164,23 +181,7 @@
         android:fontFamily="@font/oswald_light"
         android:text="Examples:"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.163"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/RunningJogging"
         app:layout_constraintTop_toBottomOf="@+id/textViewAerobicExerciseHeading" />
-
-    <TextView
-        android:id="@+id/AerobicExerciseMore"
-        android:layout_width="358dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/oswald_light"
-        android:text="*Many sports such as Soccor and Basketball are also forms of aerobic exercise"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Skip" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

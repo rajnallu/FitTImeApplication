@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StrengthResistanceExercise">
+
+    <Button
+        android:id="@+id/backtoExercise2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Back"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:backgroundTint="#9C9C9C"
+        app:layout_constraintEnd_toStartOf="@+id/Start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Deadlift" />
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Start"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:backgroundTint="#9C9C9C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Deadlift" />
+
+    <Button
+        android:id="@+id/PushUps"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="left"
+        android:text="Push-Ups"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#3900BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/examplesAerobic2" />
+
+    <Button
+        android:id="@+id/PullUps"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="left"
+        android:text="Pull-Ups"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#6800BCD4"
+        app:layout_constraintStart_toStartOf="@+id/PushUps"
+        app:layout_constraintTop_toBottomOf="@+id/PushUps" />
+
+    <Button
+        android:id="@+id/Weightlifting"
+        android:layout_width="183dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="left"
+        android:text="Weightlifting"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#8500BCD4"
+        app:layout_constraintStart_toStartOf="@+id/PullUps"
+        app:layout_constraintTop_toBottomOf="@+id/PullUps" />
+
+    <Button
+        android:id="@+id/Deadlift"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="left"
+        android:text="Deadlift"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <Button
+        android:id="@+id/Core"
+        android:layout_width="104dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="left"
+        android:text="-Core"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#9E00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Weightlifting" />
+
+    <Button
+        android:id="@+id/Front"
+        android:layout_width="104dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="left"
+        android:text="-Front"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#CE00BCD4"
+        app:layout_constraintStart_toStartOf="@+id/Core"
+        app:layout_constraintTop_toBottomOf="@+id/Core" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="104dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="left"
+        android:text="-Back"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#E400BCD4"
+        app:layout_constraintStart_toStartOf="@+id/Front"
+        app:layout_constraintTop_toBottomOf="@+id/Front" />
+
+    <TextView
+        android:id="@+id/examplesAerobic2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_light"
+        android:text="Examples:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StreengthresistanceHeading" />
+
+    <TextView
+        android:id="@+id/StreengthresistanceHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Strength/Resistance"
+        android:textColor="#00BCD4"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExerciseHeading4" />
+
+    <TextView
+        android:id="@+id/textViewExerciseHeading4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Exercise"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGoalsOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
