@@ -11,6 +11,7 @@ public class ExcercisePage extends AppCompatActivity {
 
     private Button AerobicExcercise;
     private Button flexibilityExcercise;
+    private Button StrengthResistenceExercise;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +35,20 @@ public class ExcercisePage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        StrengthResistenceExercise.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ExcercisePage.this,StrengthResistanceExercise.class );
+                startActivity(intent);
+            }
+        });
 
     }
 
     private void initViews() {
         AerobicExcercise = findViewById(R.id.AerobicExcercise);
         flexibilityExcercise = findViewById(R.id.FlexibilityExercise);
+         StrengthResistenceExercise = findViewById(R.id.StrengthResistenceExercise);
     }
 
 

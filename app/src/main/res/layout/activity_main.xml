@@ -71,7 +71,7 @@
         android:id="@+id/imageBarbell"
         android:layout_width="350dp"
         android:layout_height="175dp"
-        android:layout_marginBottom="128dp"
+        android:layout_marginBottom="84dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"

@@ -19,7 +19,7 @@ public class GoalsPage extends AppCompatActivity {
         goalsNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(GoalsPage.this,ScreenTimeLimits.class );
+                Intent intent = new Intent(GoalsPage.this, ScreenTimeLimits.class );
                 startActivity(intent);
             }
         });
